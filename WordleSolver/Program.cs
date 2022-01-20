@@ -9,30 +9,16 @@ solver.AddGuess("noily");
 solver.AddGuess("coign");
 
 
-//solver.AddKnown(0, 'p');
-solver.AddKnown(1, 'o');
-solver.AddKnown(2, 'i');
-//solver.AddKnown(3, 's');
-//solver.AddKnown(4, 'e');
+//solver.AddCorrect(0, 'p');
+solver.AddCorrect(1, 'o');
+solver.AddCorrect(2, 'i');
+//solver.AddCorrect(3, 's');
+//solver.AddCorrect(4, 'e');
 
+solver.AddPresent('n');
 
+//solver.AddAbsent('a');
 
-solver.AddContains('n');
-//solver.AddContains('o');
-//solver.AddContains('d');
-//solver.AddContains('y');
-//solver.AddContains('l');
-
-solver.AddInvalid('a');
-solver.AddInvalid('r');
-solver.AddInvalid('s');
-solver.AddInvalid('e');
-solver.AddInvalid('l');
-solver.AddInvalid('y');
-///solver.AddInvalid('l');
-//solver.AddInvalid('y');
-solver.AddInvalid('c');
-solver.AddInvalid('g');
 
 
 var output = solver.GetOptions();
